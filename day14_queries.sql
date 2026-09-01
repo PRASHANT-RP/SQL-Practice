@@ -11,4 +11,13 @@ SELECT
 FROM ProductSales;
 
 
+-- Q2) Median salary in department
+-- Scenario: PERCENTILE_CONT comparison
+
+SELECT 
+    dept_id,
+    PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY salary) AS median_salary
+FROM Employees
+GROUP BY dept_id;
+
 
