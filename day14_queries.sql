@@ -9,3 +9,6 @@ SELECT
         2
     ) AS pct_contribution
 FROM ProductSales;
+
+
+
